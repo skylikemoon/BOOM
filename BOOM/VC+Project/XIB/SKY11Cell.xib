@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SKY11Cell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggr-lr-ZR9">
+                        <rect key="frame" x="8" y="8" width="304" height="30"/>
+                        <color key="backgroundColor" red="1" green="0.72560427139999994" blue="0.1163483964" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="HdB-Zg-kit"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GvT-35-jKD" customClass="ImgAndLblButton">
+                        <rect key="frame" x="8" y="45" width="82" height="82"/>
+                        <color key="backgroundColor" red="1" green="0.62052954069999999" blue="0.26496973439999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="GvT-35-jKD" secondAttribute="height" multiplier="1:1" id="7zG-T8-57S"/>
+                        </constraints>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1X-ug-u7B" customClass="ImgAndLblButton">
+                        <rect key="frame" x="119" y="45" width="82" height="82"/>
+                        <color key="backgroundColor" red="1" green="0.62052954069999999" blue="0.26496973439999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BtJ-aa-TP3" customClass="ImgAndLblButton">
+                        <rect key="frame" x="230" y="45" width="82" height="82"/>
+                        <color key="backgroundColor" red="1" green="0.62052954069999999" blue="0.26496973439999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="GvT-35-jKD" firstAttribute="top" secondItem="ggr-lr-ZR9" secondAttribute="bottom" constant="7" id="2CL-wV-ht6"/>
+                    <constraint firstItem="GvT-35-jKD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="2yc-OJ-gTb"/>
+                    <constraint firstItem="ggr-lr-ZR9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Jwg-CV-pgq"/>
+                    <constraint firstAttribute="trailing" secondItem="ggr-lr-ZR9" secondAttribute="trailing" constant="8" id="bCL-Cm-9I8"/>
+                    <constraint firstAttribute="bottom" secondItem="GvT-35-jKD" secondAttribute="bottom" constant="12" id="d1Q-VV-3XZ"/>
+                    <constraint firstItem="ggr-lr-ZR9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="djI-9J-Y0M"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgBtn" destination="GvT-35-jKD" id="hL9-dM-spH"/>
+                <outlet property="titleLabel" destination="ggr-lr-ZR9" id="NtX-yy-VAY"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,67 @@
+//
+//  PrefixHeader.pch
+//  BOOM
+//
+//  Created by eims1 on 16/4/29.
+//  Copyright (c) 2016年 sky. All rights reserved.
+//
+
+#ifndef BOOM_PrefixHeader_pch
+#define BOOM_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#define MSWIDTH     [UIScreen mainScreen].bounds.size.width
+#define MSHEIGHT    [UIScreen mainScreen].bounds.size.height
+
+//APP主题色
+#define KColor  [ColorTools colorWithHexString:@"#0684cf"]
+//页面背景色
+#define KbackgroundColor  [ColorTools colorWithHexString:@"#edf1f4"]
+#define KblackgroundColor  [ColorTools colorWithHexString:@"#f2f2f2"]
+
+//=============控件颜色
+#define OrangeColor  [ColorTools colorWithHexString:@"#fe7022"]
+#define YellowColor  [ColorTools colorWithHexString:@"#ffb657"]
+#define GrayColor  [ColorTools colorWithHexString:@"#121212"]
+
+//=============字体颜色
+#define BlackWordColor  [ColorTools colorWithHexString:@"#666666"]
+#define BtnSelectedColor  [ColorTools colorWithHexString:@"#e2e2e2"]
+#define jjBlueColor  [ColorTools colorWithHexString:@"#4ca6eb"]
+#define jjBlueWordColor  [ColorTools colorWithHexString:@"#aed8f9"]
+
+//=============线条颜色
+#define LineColor  [ColorTools colorWithHexString:@"#dadada"]
+#define LightGrayColor  [ColorTools colorWithHexString:@"#dadada"]
+#define KlayerBorder  [ColorTools colorWithHexString:@"#d9d9d9"]
+
+
+#define VIEWMAINCOLOR_ORANGE    jjBlueWordColor
+#define FONTCOLOR_LIGHTGREY    KColor
+
+//绿色颜色值
+#define GreenColor [ColorTools colorWithHexString:@"#18b15f"]
+//粉红颜色值
+#define PinkColor  [ColorTools colorWithHexString:@"#e34f4f"]
+//蓝色字体颜色值
+#define BluewordColor  [ColorTools colorWithHexString:@"#436EEE"]
+//江西来融红色值
+#define KRedColor  [ColorTools colorWithHexString:@"#fd5353"]
+//江西来融蓝色值
+#define KBlueColor  [ColorTools colorWithHexString:@"#2fbdf2"]
+//江西来融绿色值
+#define KGreenColor  [ColorTools colorWithHexString:@"#"]
+// 黑色
+#define KBlackColor  [ColorTools colorWithHexString:@"#3a3a3a"]
+
+// 应用程序托管
+#define AppDelegateInstance	                        ((AppDelegate*)([UIApplication sharedApplication].delegate))
+
+#import <UIKit/UIKit.h>
+#import "ColorTools.h"
+#import "Macros.h"
+#import "UIImageView+WebCache.h"
+#import "SVProgressHUD.h"
+
+#endif
